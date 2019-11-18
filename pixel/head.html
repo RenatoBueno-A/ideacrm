@@ -3,11 +3,12 @@
     var idc = "{{ settings.idc }}";
     var pre_empresa = "{{settings.pre_empresa}}";
     var pre_depto = "{{settings.pre_depto }}";
-    var floatingchat = "{{settings.floatingchat}}";
     var corbarra = "{{settings.corbarra}}";
     var textobarra = "{{settings.textobarra}}";
     var cortextodabarra = "{{settings.cortextodabarra}}";
-    var onlychat = "{{settings.onlychat}}";
+    var floatingchat = ("{{settings.floatingchat}}" == 'true');
+    var onlychat = ("{{settings.onlychat}}" == 'true');
+
     if (idc) {
       var script = document.createElement("script");
       script.type = "text/javascript";
@@ -17,11 +18,11 @@
         idc +
         (pre_empresa ? "&pre_empresa=" + pre_empresa : "") +
         (pre_depto ? "&pre_depto=" + pre_depto : "") +
-        (floatingchat ? "&floatingchat=" + floatingchat : "") +
+        (floatingchat ? "&floatingchat=1" : "&floatingchat=0") +
         (corbarra ? "&corbarra=" + corbarra : "") +
         (textobarra ? "&textobarra=" + textobarra : "") +
         (cortextodabarra ? "&cortextodabarra=" + cortextodabarra : "") +
-        (onlychat ? "&onlychat=" + onlychat : "");
+        (onlychat ? "&onlychat=1" : "&onlychat=0");
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(script, s);
     }
