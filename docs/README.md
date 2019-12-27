@@ -1,14 +1,17 @@
-# ideacrm
+# Idea CRM
 
-VTEX Idea CRM first-party app
+📢 Use this project, [contribute](https://github.com/vtex-apps/ideacrm) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
 
-## How to install
+Idea CRM is a first party integration app for the platform's customer relationship management solution. It enables you to control customer interactions, providing measurements and trackability through Chat, Phone, Email, SMS, Tickets, Social Network and other applications.
+For more on the Idea CRM solution, please visit their [website](https://www.gvp.com.br/crm)
 
-Open the VTEX App Store and install this app on your store.
+## Configuration
 
-Now, open the app settings on your admin and fill in the Idea CRM options.
+1. Open the **VTEX App Store** and install the Idea CRM app on your store. You can also run the following command in your terminal:
 
+```sh
+vtex install vtex.ideacrm@0.x
+```
 
-**Upcoming documentation:**
-
- - [update bool type to string](https://github.com/vtex-apps/ideacrm/pull/5)
+2. In the admin's side bar, access **Apps** within the **Account settings** section.
+3. Select the **Idea CRM** box and fill out the necessary fields in order to complete the app's configuration.
